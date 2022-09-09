@@ -1,6 +1,6 @@
 // Ex. 1 - Task 1 ---------------------------------------------------------
 
-const arrayCategories = document.querySelectorAll('li.item');
+const arrayCategories = document.querySelectorAll('ul#categories li.item');
 
 function getLengthNumberOfCategories() {
   return arrayCategories.length;

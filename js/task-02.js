@@ -17,7 +17,7 @@ function getListItems(ingredients) {
 }
 
 // Get link for element
-const ingredientsEl = document.querySelector('#ingredients');
+const ingredientsEl = document.querySelector('ul#ingredients');
 
 // Call function
 getListItems(ingredients);

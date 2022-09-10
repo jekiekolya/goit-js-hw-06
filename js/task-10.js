@@ -11,6 +11,7 @@ const createBtnEl = document.querySelector('button[data-create]');
 const destroyBtnEl = document.querySelector('button[data-destroy]');
 
 let stringStructure = '';
+let arrayStructure = [];
 // Function for create structure HTML
 function createBoxes(amount) {
   for (let i = 0; i < amount; i += 1) {
@@ -19,6 +20,16 @@ function createBoxes(amount) {
     let randomColor = getRandomHexColor();
     stringStructure += `<div style="width: ${widthBlock}px; height:${heightBlock}px; background-color: ${randomColor}"></div>`;
   }
+
+  // Another way for create structure
+  // for (let i = 0; i < amount; i += 1) {
+  //   let divEl = document.createElement('div');
+  //   let randomColor = getRandomHexColor();
+  //   divEl.style.width = `${30 + 10 * i}px`;
+  //   divEl.style.height = `${30 + 10 * i}px`;
+  //   divEl.style.backgroundColor = randomColor;
+  //   arrayStructure.push(divEl);
+  // }
 }
 
 // Add event listener for getting number from input

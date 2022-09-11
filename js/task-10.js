@@ -1,14 +1,14 @@
-function getRandomHexColor() {
-  return `#${Math.floor(Math.random() * 16777215)
-    .toString(16)
-    .padStart(6, 0)}`;
-}
-
 // Getting Ref
 const inputEl = document.querySelector('input[type="number"]');
 const boxEl = document.querySelector('#boxes');
 const createBtnEl = document.querySelector('button[data-create]');
 const destroyBtnEl = document.querySelector('button[data-destroy]');
+
+function getRandomHexColor() {
+  return `#${Math.floor(Math.random() * 16777215)
+    .toString(16)
+    .padStart(6, 0)}`;
+}
 
 let stringStructure = '';
 let arrayStructure = [];
@@ -50,4 +50,6 @@ createBtnEl.addEventListener('click', () => {
 destroyBtnEl.addEventListener('click', () => {
   boxEl.innerHTML = '';
   stringStructure = '';
+  inputEl.value = '';
+  numberInput = '';
 });

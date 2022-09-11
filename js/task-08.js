@@ -3,8 +3,11 @@ const formEl = document.querySelector('.login-form');
 
 // Create Obj
 const dataForm = {};
+
 // Add event listener
-formEl.addEventListener('submit', event => {
+formEl.addEventListener('submit', formSubmitHandler);
+
+function formSubmitHandler(event) {
   // Reset to default
   event.preventDefault();
 
@@ -29,4 +32,4 @@ formEl.addEventListener('submit', event => {
 
   // Reset form
   formEl.reset();
-});
+}

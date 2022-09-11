@@ -1,4 +1,6 @@
 const ingredients = ['Potatoes', 'Mushrooms', 'Garlic', 'Tomatos', 'Herbs', 'Condiments'];
+// Get link for element
+const ingredientsEl = document.querySelector('#ingredients');
 
 // Create empty array
 const itemArray = [];
@@ -15,9 +17,6 @@ function getListItems(ingredients) {
 
   return itemArray;
 }
-
-// Get link for element
-const ingredientsEl = document.querySelector('#ingredients');
 
 // Call function
 getListItems(ingredients);
